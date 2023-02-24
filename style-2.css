@@ -1,0 +1,273 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* Header*/
+header{
+    width:100vw; 
+    height: 110px;
+    background-color:rgb(255, 255, 255);
+    border-radius: 0px 0px 25px 25px;
+}
+
+.logo{
+    display: flex;
+    margin-left: 2rem;
+}
+
+.logo2{
+    position: relative;
+    font-family: 'Roboto Slab', serif;
+    font-size:xx-large;
+    top: 2.2rem;
+}
+
+.btn_head{
+    display: flex;
+    justify-content: end;
+    margin-right: 6rem;
+}
+
+.btn-1{
+    font-weight: bold;
+    position: relative;
+    bottom: 65px;
+    font-size: larger;
+}
+.text-btn-1{
+    color:rgb(52, 52, 52);
+}
+.text-btn-1:hover{
+    color: rgb(103, 103, 103);
+    text-decoration: none;
+}
+
+.btn-2{
+    margin-left: 2rem;
+    position: relative;
+    bottom: 75px;
+}
+
+/* Footer */
+footer{
+    background-color:#fbf8df;
+    width: 100vw;
+    height: 68px;
+}
+
+.TM{
+    font-family: 'Roboto Slab', serif;
+    position: relative;
+    margin-left: 3rem;
+    top: 1rem;
+}
+
+.social{
+    display: inline;
+    position: relative;
+    bottom: 1.5rem;
+    left: 75rem;
+    margin-right: 1rem;
+}
+
+/* About */
+.about-box{
+    display: grid;
+    place-items: center;
+    height: 1247px;
+}
+
+.about-title{
+    font-family: 'Roboto Slab', serif;
+    margin-bottom: 40px;
+}
+
+.img-cat{
+    z-index: 1;
+}
+
+.about-text-box{
+    background-color: #e0ad83;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+    position: relative;
+    bottom: 180px;
+}
+
+.about-txt{
+    margin-top: 220px;
+    font-size: large;
+}
+
+.title-li{
+    font-size: x-large;
+    font-weight: bold;
+    position: relative;
+    right: 167px;
+    margin-top: 20px;
+}
+
+li{
+    font-size: large;
+}
+
+.title-li-2{
+    font-size: x-large;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.about-form{
+    width: 550px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+/* Carta */
+.title-carta{
+    display: grid;
+    place-items: center;
+    margin-bottom: 20px;
+    font-family: 'Roboto Slab', serif;
+}
+
+.carta-box{
+    background-color:#fbf8df;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card{
+    margin: 20px;
+    width: 300px;
+}
+
+.card-img-top{
+   height: 270px;
+   object-fit:cover;
+}
+
+/* Pedido */
+
+.pedido-body{
+    background-color: #fbf8df;
+    width: 100vw;
+}
+
+.btn-ok-cb{
+    font-weight: bold;
+    border: none;
+    font-size: 16px;
+    border-radius: 7px;
+    padding: 7px;
+    margin-top: 25px;
+    margin-left: 20px;
+    background-color: #ff7878;
+}
+
+.btn-ok-cb:hover{
+    background-color: #eb4d4d;
+    box-shadow: 3px 5px 10px;
+}
+
+
+.pedido-box{
+    height: 575px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pedido-title{
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.form{
+    background-color: rgb(255, 255, 255);
+    padding: 40px 30px;
+    box-shadow: 4px 10px 15px rgb(33, 33, 33);
+    border-radius: 10px;
+}
+
+.form-ok{
+    width: 100%;
+    margin: auto;
+}
+
+.test{
+    margin-bottom: 20px;
+}
+
+input{
+    background: none;
+    color: #c6c6c6;
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid rgb(124, 124, 124);
+}
+
+input:focus{
+    outline: none;
+    color: #b1b1b1;
+}
+
+input:focus~label,input:valid~label{
+    top: -14px;
+    font-size: 14px;
+    color: orange;
+}
+
+.bar{
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.bar::before{
+    content: '';
+    height: 2px;
+    width: 0%;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    background: linear-gradient(to right, #fdc830, #f37335);
+    transition: 0.3s ease width;
+}
+
+input:focus~.bar::before{
+    width: 100%;
+}
+
+label{
+    opacity: 0;
+}
+
+.btn-pedido{
+    font-weight: bold;
+    font-size: 16px;
+    background: linear-gradient(to right, #fdc830, #f37335);
+    border: none;
+    border-radius: 10px;
+    display: block;
+    width: 50%;
+    margin: 10px auto;
+    color: #ffffff;
+    height: 40px;
+    cursor: pointer;
+    transition: 0.2s ease all;
+}
+
+.btn-pedido:hover{
+    transform: scale(1.1);
+}
